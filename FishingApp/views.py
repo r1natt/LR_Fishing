@@ -9,3 +9,7 @@ def index(request):
                             'Ваш логин: ' + request.POST['login'] +
                             '<br>Ваш пароль: ' + request.POST['password'])
     return render(request, 'index.html')
+
+
+def first_page(request):
+    return render(request, 'first.html')
